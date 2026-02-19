@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#1e1e1e;
+}
+
+
+.topbar{
+    background:#f2efef;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.topbar .logo{
+    font-weight:bold;
+    color:#555;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#4cc4bb;
+    font-weight:bold;
+    font-size:13px;
+}
+
+/* Hero Section */
+.hero{
+    background:#3bb6ad;
+    text-align:center;
+    padding:70px 20px;
+    color:white;
+}
+
+.hero .circle{
+    width:120px;
+    height:120px;
+    background:#0d3b66;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:50px;
+    margin:0 auto 20px;
+}
+
+.hero h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:14px;
+}
+
+/* Content Section */
+.content{
+    background:#f0f0f0;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    padding:40px 60px;
+}
+
+.column h3{
+    margin-bottom:15px;
+    color:#333;
+}
+
+.column p{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:10px;
+    color:#555;
+}
+
+/* Center box styling */
+.center-box{
+    text-align:center;
+}
+
+.food-grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+
+    font-size:40px;
+    background-color: #3bb6ad;
+    border: 0;
+}
+
+
+
+@media(max-width: 992px){
+
+    .content{
+        grid-template-columns:1fr;
+        padding:30px;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+}
+
+@media(max-width:600px){
+
+    .topbar{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
